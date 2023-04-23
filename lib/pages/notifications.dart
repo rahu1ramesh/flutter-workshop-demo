@@ -2,16 +2,16 @@ import 'package:basic_workshop_001/pages/message.dart';
 import 'package:flutter/material.dart';
 import 'package:basic_workshop_001/class/message.dart';
 
-class PageTwo extends StatefulWidget {
-  const PageTwo({super.key, required this.title});
+class NotificationsPage extends StatefulWidget {
+  const NotificationsPage({super.key, required this.title});
 
   final String title;
 
   @override
-  State<PageTwo> createState() => _PageTwoState();
+  State<NotificationsPage> createState() => _NotificationsPageState();
 }
 
-class _PageTwoState extends State<PageTwo> {
+class _NotificationsPageState extends State<NotificationsPage> {
   final List<Message> messageList = [
     Message("Anil",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),

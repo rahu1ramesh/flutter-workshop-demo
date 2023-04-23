@@ -1,4 +1,4 @@
-import 'package:basic_workshop_001/pages/two.dart';
+import 'package:basic_workshop_001/pages/notifications.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -23,8 +23,8 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                const Padding(
+              children: const <Widget>[
+                Padding(
                   padding: EdgeInsets.all(20),
                   child: Text(
                     "Welcome Rahul",
@@ -33,8 +33,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                Image.network(
-                    'https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png'),
+                Icon(
+                  Icons.person,
+                  size: 30,
+                  color: Colors.black,
+                ),
               ],
             ),
             Padding(
@@ -44,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const PageTwo(
+                      builder: (context) => const NotificationsPage(
                         title: 'Notifications',
                       ),
                     ),
